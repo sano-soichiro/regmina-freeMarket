@@ -1,0 +1,335 @@
+:root{
+    --main-color: #3B9264;
+    --main-color-shadow: #3b926457;
+    --error-color: #af1a2e;
+    --error-color-shadow: #af1a2e57;
+    --second-color: #161616;
+    --third-color: #cecece;
+    --string-color: #26794c;
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Noto Sans JP' , sans-serif;
+    font-size: 10px;
+    list-style: none;
+}
+
+::selection {
+    background: var(--main-color);
+    color: #fff;
+}
+
+/* Firefox */
+::-moz-selection {
+    background: var(--main-color);
+    color: #fff;
+}
+
+body,html{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+section{
+    width: 100%;
+    height: 100vh;
+}
+
+.block{
+    display: block;
+    width: 100%;
+}
+.none{
+    display: none;
+}
+
+main{
+    display: flex;
+    width: 100%;
+    height: 600px;
+    justify-content: center;
+}
+main .left_wrapper{
+    width: 24%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+main .left_wrapper .left_content{
+    width: 100%;
+    height: 100%;
+}
+main .left_list {
+    position: absolute;
+    background-color: #fff;
+    width: 32%;
+    height: 300px;
+    z-index: 2;
+}
+main .right_wrapper{
+    width: 60%;
+    height: 100%;
+}
+main .right_img_list{
+    width: 100%;
+    height: 100%;
+}
+main .right_img_list .slick-list{
+    width: 100% !important;
+    height: 100% !important;
+}
+main .right_wrapper li{
+    width: 100%;
+    height: 100%;
+}
+main .right_content img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+main .right_wrapper{
+    position: relative;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+main .right_wrapper .sign_content{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 350px;
+    width: 250px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    margin-right: 100px;
+}
+main .right_wrapper .signed_content2{
+    height: 90px;
+}
+main .sign_img{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 80px;
+}
+main .sign_img img{
+    width: 80px;
+    height: 100%;
+    background-color: black;
+    border: none;
+    border-radius: 50%;
+    object-fit: cover;
+}
+main .sign_content .sign_name{
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+    color: var(--second-color);
+    margin-top: 18px;
+    font-size: 1.7rem;
+}
+main .block a{
+    display: block;
+    width: 100%;
+    margin-top: 12px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 1.5rem;
+    background-color: white;
+    color: var(--second-color);
+    border: 3px solid var(--second-color);
+    border-radius: 3px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 600;
+}
+main .block .openModal2{
+    width: 100%;
+    margin-top: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 1.5rem;
+    background-color: var(--second-color);
+    text-align: center;
+    border: 3px solid var(--second-color);
+    border-radius: 3px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+main .block .logout{
+    width: 100%;
+    margin-top: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 1.5rem;
+    background-color: var(--second-color);
+    text-align: center;
+    border: 3px solid var(--second-color);
+    border-radius: 3px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+main .sign_wrapper{
+    width: 80%;
+    height: 330px;
+}
+.page_border{
+    background-color: gray;
+    height: 1px;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.page_comment{
+    margin-top: 15px;
+    font-size: 1.4rem;
+    width: 100%;
+}
+.form_signed{
+    width: 100%;
+}
+.logout_content{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.signed_content{
+    width: 100%;
+    height: 200px;
+}
+.left_content_title{
+    font-size: 3rem;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 75%;
+}
+.left_content_comment{
+    font-size: 1.7rem;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* ピックアップ */
+#pick_up_head{
+    width: 100%;
+    background-color: rgb(243, 243, 248);
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+#pick_up{
+    width: 84%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    background-color: white;
+    margin: 0 auto;
+}
+#pick_up h2{
+    width: 1050px;
+    display: block;
+    line-height: 40px;
+    font-size: 20px;
+    height: 40px;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+#pick_up form{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.item{
+    border: solid rgb(166, 166, 166) 1px;
+    width: 200px;
+    height: 360px;
+    align-items: center;
+}
+
+.item_icon{
+    width: 100%;
+    height: 100%;
+}
+.product_img{
+    width: 200px;
+    height: 175px;
+}
+.product_content{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.product_name{
+    width: 100%;
+    font-weight: 400;
+    font-size: 14px;
+    padding-top: 5px;
+    text-align: left;
+}
+.product_name_wrapper{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    height: 40px;
+    padding-top: 15px;
+}
+
+.category_head{
+    display: flex;
+    height: 30px;
+    width: 90%;
+}
+.category{
+    font-size: 11px;
+    color: grey;
+}
+
+.payment{
+    font-weight: 700;
+    font-size: 19px;
+    color: rgb(92, 176, 92);
+    height: 35px;
+    text-align: left;
+    letter-spacing: 1px;
+    width: 90%;
+}
+.user_head{
+    display: flex;
+    height: 60px;
+    width: 90%;
+    padding-left: 5px;
+    align-items: center;
+}
+.user_head img{
+    width: 100%;
+    height: 100%;
+}
+.user_img{
+    width: 40px;
+    height: 40px;
+}
+.user_name{
+    width: 100px;
+}
+#pick_up button{
+    width: 200px;
+    height: 360px;
+    background-color: #fff;
+    border: none;
+    display: block;
+    margin-left: 5px;
+    margin-right: 5px;
+}

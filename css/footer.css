@@ -1,0 +1,131 @@
+:root{
+    --main-color: #3B9264;
+    --main-color-shadow: #3b926457;
+    --error-color: #af1a2e;
+    --error-color-shadow: #af1a2e57;
+    --second-color: #161616;
+    --third-color: #cecece;
+    --string-color: #26794c;
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Noto Sans JP' , sans-serif;
+    font-size: 10px;
+    list-style: none;
+}
+
+::selection {
+    background: var(--main-color);
+    color: #fff;
+}
+
+body,html{
+    width: 100%;
+}
+
+footer{
+    border-top: 1px solid var(--third-color);
+    width: 100%;
+    height: 380px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.footer_wrapper{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 84%;
+    min-width: 1000px;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+}
+.footer_content1{
+    width: 350px;
+}
+.footer_content2{
+    width: 150px;
+}
+.footer_content3{
+    width: 150px;
+}
+.footer_content4{
+    width: 250px;
+}
+
+.footer_heading{
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 7px;
+}
+.footer_item{
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.footer_item_2{
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.footer_title{
+    font-size: 2.2rem;
+    font-weight: 600;
+}
+.footer_text{
+    margin-top: 5px;
+    font-size: 1.2rem;
+}
+
+.email_unit{
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+}
+.email_textbox{
+    height: 35px;
+    width: 80%;
+}
+.mail_textbox{
+    box-sizing: border-box;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 20px;
+    border: 1px var(--third-color) solid;
+    width: 100%;
+    height: 100%;
+    color: var(--second-color);
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+.mail_textbox:focus{
+    outline: none;
+}
+.email_button{
+    width: 20%;
+    height: 35px;
+}
+.email_button button{
+    box-sizing: border-box;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 20px;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 0px 3px 3px 0px;
+    text-align: center;
+    color: White;
+    background-color: var(--main-color);
+}
+
+.footer_bottom_wrapper{
+    width: 84%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: 1px solid var(--third-color);
+}
+.reserved{
+    font-size: 1.2rem;
+}

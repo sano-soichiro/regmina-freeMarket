@@ -1,0 +1,180 @@
+@charset "utf-8";
+
+:root{
+    --main-color: #3B9264;
+    --main-color-shadow: #3b926457;
+    --error-color: #af1a2e;
+    --error-color-shadow: #af1a2e57;
+    --second-color: #161616;
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Noto Sans JP' , sans-serif;
+    font-size: 10px;
+}
+
+::selection {
+    background: var(--main-color);
+    color: #fff;
+}
+
+#main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#content{
+    width: 930px;
+    box-sizing: border-box;
+}
+#content form{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: flex-start;
+}
+.product_btn{
+    background-color: #fff;
+    outline: none;
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    transition: 0.5s;
+    margin-right: 30px;
+}
+.product_btn:hover{
+    transform: scale(1.1,1.1);
+    transition: 0.5s;
+}
+
+.search_p{
+    font-size: 16px;
+    font-weight: 600;
+    width: 100%;
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 15px;
+}
+.item{
+    border: solid rgb(166, 166, 166) 1px;
+    border-radius: 3px;
+    width: 200px;
+    height: 360px;
+    align-items: center;
+}
+.item_icon{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.product_content{
+    width: calc(100% - 30px);
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.product_name{
+    width: 100%;
+    height: 100%;
+    font-weight: 600;
+    font-size: 16px;
+    padding-top: 5px;
+    text-align: left;
+}
+.product_img{
+    height: 190px;
+    width: 100%;
+    background-color: var(--third-color);
+}
+.product_name_wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 70px;
+    
+}
+
+.category_head{
+    display: flex;
+    height: 15px;
+    width: 100%;
+    padding-top: 5px;
+}
+.category{
+    font-size: 11px;
+    color: grey;
+}
+
+.payment{
+    font-weight: 700;
+    font-size: 18px;
+    color: rgb(16, 172, 94);
+    height: 40px;
+    text-align: left;
+    letter-spacing: 1px;
+    width: 100%;
+    font-family: 'Montserrat',sans-serif;
+}
+
+.user_head{
+    display: flex;
+    height: 30px;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.user_head img{
+    width: 100%;
+    height: 100%;
+}
+.user_img{
+    width: 30px;
+    height: 100%;
+    padding-right: 10px;
+}
+.user_name{
+    width: 80px;
+    font-size: 13px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+.prefecture{
+    font-size: 11px;
+    width: 40px;
+    color: grey;
+    display: flex;
+    margin-left: 5px;
+}
+
+.pre_img{
+    width: 15px;
+    height: 15px;
+}
+.pre_img svg{
+    width: 100%;
+    height: 100%;
+    fill: grey;
+}
+.product_btn{
+    background-color: #fff;
+    border: none;
+}
+.user_heads1{
+    display: flex;
+    width: 120px;
+}
+.user_heads2{
+    display: flex;
+    width: 80px;
+    height: 100%;
+    align-items: center;
+}

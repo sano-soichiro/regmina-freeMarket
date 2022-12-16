@@ -1,0 +1,214 @@
+:root{
+    --main-color: #3B9264;
+    --main-color-shadow: #3b926457;
+    --error-color: #af1a2e;
+    --error-color-shadow: #af1a2e57;
+    --second-color: #161616;
+    --third-color: #cecece;
+}
+
+
+.input_block{
+    height: 40px;
+    width: 230px;
+    margin-right: 40px;
+    box-sizing: border-box;
+}
+.input_block_flex{
+    display: flex;
+    height: 40px;
+    width: 500px;
+    margin-right: 40px;
+    box-sizing: border-box;
+}
+
+
+/* BUTTON */
+.basic_button{
+    padding-top: 6px;
+    padding-bottom: 6px;
+    height: 100%;
+    width: 100%;
+    font-size:1.3rem;
+    font-weight: 700;
+    color: white;
+    background-color: var(--second-color);
+    border: 4px solid transparent;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+.basic_button:hover{
+    color: var(--second-color);
+    background-color: transparent;
+    border: 4px solid var(--second-color);
+}
+
+.sub_button{
+    padding-top: 6px;
+    padding-bottom: 6px;
+    height: 100%;
+    width: 100%;
+    font-size:1.3rem;
+    font-weight: 700;
+    color: var(--second-color);
+    background-color: white;
+    border: 4px solid var(--second-color);
+    border-radius: 4px;
+    align-items: center;
+    transition: 0.3s;
+}
+.sub_button:hover{
+    color: white;
+    background-color: var(--second-color);
+    border: 4px solid var(--second-color);
+}
+
+.color_button{
+    padding-top: 6px;
+    padding-bottom: 6px;
+    height: 100%;
+    width: 100%;
+    font-size:1.3rem;
+    font-weight: 700;
+    color: white;
+    background-color: var(--main-color);
+    border: 4px solid transparent;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+.color_button:hover{
+    color: var(--main-color);
+    background-color: transparent;
+    border: 4px solid var(--main-color);
+}
+
+.address_search_button{
+    display: block;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    height: 100%;
+    width: 200px;
+    font-size:1.3rem;
+    border: 2px solid var(--second-color); 
+    border-radius: 5px;
+    background-color: var(--second-color);
+    color: white;
+    margin-left: 10px;
+}
+
+/* SELECT */
+select{
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 10px;
+    height: 40px;
+    width: 150px;
+    font-size: 1.4em;
+    border: 2px solid var(--third-color);
+}
+select:hover{
+    border: 2px solid var(--main-color);
+    transition: 0.3s;
+}
+select:focus{
+    outline: none;
+    border: 3px solid var(--main-color);
+    box-shadow: 0px 0px 0px 5px var(--main-color-shadow);
+    transition: 0.3s;
+}
+option{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    height: 30px;
+    font-size: 1em;
+}
+
+.input_text{
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 20px;
+    width: 100%;
+    height: 40px;
+    font-weight: 500;
+    font-size: 1.4em;
+    letter-spacing: 0.5px;
+    border: var(--third-color) 1px solid;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.input_text:hover{
+    border: 2px solid var(--main-color);
+    transition: 0.3s;
+}
+.input_text:focus{
+    outline: none;
+    border: 3px solid var(--main-color);
+    box-shadow: 0px 0px 0px 5px var(--main-color-shadow);
+    transition: 0.3s;
+}
+
+.input_error_text{
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 20px;
+    height: 40px;
+    font-weight: 500;
+    font-size: 1.4em;
+    letter-spacing: 0.5px;
+    border: var(--error-color) 1px solid;
+    border-radius: 4px;
+    
+}
+.input_error_text:hover{
+    border: 2px solid var(--error-color);
+    transition: 0.3s;
+}
+
+.input_error_text:focus{
+    outline: none;
+    border: 3px solid var(--error-color);
+    box-shadow: 0px 0px 0px 5px var(--error-color-shadow);
+    transition: 0.3s;
+}
+
+
+.form_tag{
+    margin-left: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 1px;
+    padding-bottom: 2px;
+    font-size: 13px;
+    background-color: gray;
+    border: gray solid 1px;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+}
+
+.form_text_msg_block{
+    height: auto;
+}
+
+.fa-search{
+    padding-right: 10px;
+    font-size: 1em;
+}
+
+.form_textbox_msg{
+    color: var(--error-color);
+}
+.form_text_msg_block{
+    padding-top: 5px;
+    height: 20px;
+}
+.error_msg_color{
+    color: var(--error-color);
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+.input_block2{
+    width: 100%;
+}

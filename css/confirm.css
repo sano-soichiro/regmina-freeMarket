@@ -1,0 +1,86 @@
+@charset "utf-8";
+
+*{
+    padding: 0;
+    margin: 0;
+    background-color: rgb(231, 230, 230);
+    font-family: 'Noto Sans JP' , sans-serif;
+}
+
+#main{
+    width: 600px;
+    margin: 0 auto;
+}
+
+/* 上部 */
+#head h1{
+    line-height: 150px;
+    font-size: 40px;
+}
+.main_p{
+    line-height: 60px;
+    font-size: 25px;
+}
+.sub_p{
+    line-height: 20px;
+    font-size: 17px;
+    color: gray;
+}
+
+/* 入力内容の表示部 */
+#main_clum{
+    width: 100%;
+    /* padding: 30px; */
+    background-color: white;
+    margin-bottom: 30px;
+    margin-top: 50px;
+    padding-top: 40px;
+}
+
+.clum{
+    background-color: white;
+    display: flex;
+    height: 50px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
+.head_clum{
+    background-color: white;
+    width: 30%;
+}
+.sub_clum{
+    background-color: white;
+    width: 70%;
+}
+
+.sub_pp{
+    font-size: 17px;
+    color: gray;
+}
+
+/* ボタン */
+button{
+    margin: 0 auto;
+    width: 48%;
+    height: 60px;
+    color: rgb(217, 211, 201);
+    font-size: 17px;
+    font-weight: 500;
+    border-radius: 5px;
+    background-color: black;
+    border: solid 1px rgb(185, 171, 171);
+}
+#btn_head{
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+a{
+    display: block;
+    width: 100%;
+    height: 100px;
+    margin: 0 auto;
+    line-height: 100px;
+    text-align: center;
+}

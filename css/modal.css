@@ -1,0 +1,123 @@
+:root{
+    --main-color: #3B9264;
+    --main-color-shadow: #3b926457;
+    --error-color: #af1a2e;
+    --error-color-shadow: #af1a2e57;
+    --second-color: #161616;
+    --third-color: #cecece;
+    --string-color: #26794c;
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Noto Sans JP' , sans-serif;
+    font-size: 10px;
+    list-style: none;
+}
+
+::selection {
+    background: var(--main-color);
+    color: #fff;
+}
+
+#modalArea2{
+    display: none;
+    z-index: 10;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+
+.modalWrapper {
+    width: 500px;
+    height: auto;
+    padding: 10px 100px;
+    border: none;
+    border-radius: 3px;
+    z-index: 100;
+    background-color: #fff;
+}
+.modalWrapper .modalContents h2 {
+  text-align: center;
+  font-size: 3rem;
+  margin: 30px 0;
+}
+
+.modalWrapper .modalContents form[name="userForm"] p {
+  line-height: normal;
+  margin-bottom: 10px;
+}
+.modalWrapper .modalContents form[name="userForm"] .signin_head {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.modalWrapper .modalContents form[name="userForm"] p:nth-of-type(2) {
+  margin-bottom: 30px;
+}
+.modalWrapper .modalContents form[name="userForm"] p:nth-last-of-type(2) {
+  margin-bottom: 30px;
+}
+
+.modalWrapper .modalContents form[name="userForm"] p input {
+  border: 1px solid #999;
+  width: 100%;
+  border-radius: 5px;
+  padding-left: 10px;
+}
+
+.modalWrapper .modalContents form[name="userForm"] .signUpButton {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 5px;
+  background-color: darkblue;
+  color: #fff;
+  text-align: center;
+}
+
+.modalWrapper .closeModal2 {
+  cursor: pointer;
+}
+  /* モーダルタブズ */
+.modalTabs{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.modal_link{
+    text-decoration: underline;
+    color: var(--second-color);
+    font-size: 1.2rem;
+}
+
+.modalBg2{
+  background-color: rgba(0, 0, 0, 0.459) !important;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+}
+
+.display{
+  display: flex !important;
+}
+
+.modal_alert{
+  color: red;
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+.signInButton{
+  height: 50px;
+}
+.signInComment{
+  margin-top: 10px;
+  padding-bottom: 30px;
+  color: var(--second-color);
+  font-size: 1.3rem;
+  font-weight: 500;
+  text-align: center;
+}

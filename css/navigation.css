@@ -1,0 +1,216 @@
+:root{
+    --main-color: #3B9264;
+    --main-color-shadow: #3b926457;
+    --error-color: #af1a2e;
+    --error-color-shadow: #af1a2e57;
+    --second-color: #161616;
+    --third-color: #cecece;
+    --string-color: #26794c;
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Noto Sans JP' , sans-serif;
+    font-size: 10px;
+    list-style: none;
+}
+
+::selection {
+    background: var(--main-color);
+    color: #fff;
+}
+
+#nav_group{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.global_nav{
+    width: 84%;
+    height: 80px;
+    min-width: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.haeder_nav{
+    padding-left: 8%;
+    padding-right: 8%;
+    width: 84%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.global_nav .regmina_logo{
+    display: block;
+    color: var(--main-color);
+    text-decoration: none;
+    font-family: 'Righteous', cursive;
+    font-size: 4rem;
+}
+.global_nav .global_nav_option{
+    display: flex;
+    align-items: center;
+    height: 70px;
+}
+.exhibit_container{
+    width: 150px;
+    display: flex;
+    align-items: center;
+}
+.exhibit_btn{
+    text-align: center;
+    text-decoration: none;
+}
+.global_nav .search_container{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+.global_nav .cart_container{
+    display: block;
+    text-align: center;
+    width: 50px;
+    cursor: pointer;
+}
+.global_nav .search_textbox{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    border: 1px solid var(--third-color);
+}
+#modal_body{
+    width: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    transition: 0.5s;
+}
+#modal_search{
+    width: 1000px;
+    color: var(--second-color);
+    background-color: #fff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 40px;
+    padding-left: 40px;
+    border: none;
+    border-radius: 5px;
+    z-index: 5;
+    top: 60px;
+    position: absolute;
+}
+#search{
+    width: 100%;
+    height: 100%;
+}
+.modalBg{
+    background-color: transparent !important;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    display: none;
+    z-index: 1;
+}  
+.modal_search_wrapper{
+    display: flex;
+}
+.modal_search_item{
+
+}
+.search_submit{
+    background-color: transparent;
+    color: var(--second-color);
+    border: none;
+    font-size: 2.3rem;
+    margin-right: 30px;
+    cursor: pointer;
+}
+.form_search_button{
+    position: absolute;
+    top: 7px;
+    right: 0px;
+}
+
+.form_search_container{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.form_category_container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-right: 50px;
+}
+.form_burdener_container{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-right: 50px;
+}
+.form_burdener_price_container{
+    display: flex;
+    align-items: center;
+}
+.form_area_container{
+    display: flex;
+    align-items: center;
+}
+
+.form_search{
+    width: 100%;
+    height: 50px;
+    margin-bottom: 30px;
+}
+.form_category{
+    font-size: 1.4rem;
+    font-weight: 600;
+    width: 150px;
+}
+.form_burdener{
+    font-size: 1.4rem;
+    font-weight: 600;
+    width: 150px;
+}
+.form_burdener_price{
+    font-size: 1.4rem;
+    font-weight: 600;
+    width: 150px;
+}
+.form_area{
+    font-size: 1.4rem;
+    font-weight: 600;
+    width: 150px;
+}
+
+.search_min_max1{
+    width: 110px;
+    margin-right: 40px;
+    height: 40px;
+    box-sizing: border-box;
+}
+.search_min_max2{
+    width: 110px;
+    margin-left: 20px;
+}
+.line{
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--second-color);
+}
+.fa-search{
+    font-size: 2rem !important;
+    transition: 0.5s;
+}
+.fa-shopping-cart{
+    font-size: 2rem;
+}

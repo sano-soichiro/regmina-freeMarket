@@ -1,0 +1,136 @@
+:root{
+    --main-color: #3B9264;
+    --main-color-shadow: #3b926457;
+    --error-color: #af1a2e;
+    --error-color-shadow: #af1a2e57;
+    --second-color: #161616;
+    --third-color: #cecece;
+    --string-color: #26794c;
+    --bgc-color: #F6F7F9;
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Noto Sans JP' , sans-serif;
+    font-size: 10px;
+    list-style: none;
+}
+
+::selection {
+    background: var(--main-color);
+    color: #fff;
+}
+
+/* Firefox */
+::-moz-selection {
+    background: var(--main-color);
+    color: #fff;
+}
+
+body,html{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--bgc-color);
+}
+
+section{
+    width: 100%;
+}
+
+#address_area{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#address_selection{
+    width: 500px;
+    padding-top: 50px;
+    padding-bottom: 60px;
+    padding-right: 50px;
+    padding-left: 50px;
+    border: none;
+    border-radius: 7px;
+    box-shadow: 6px 6px 5px 3px var(--third-color);
+    background-color: #fff;
+}
+
+.address_caption{
+    width: 100%;
+    height: 100px;
+    text-align: center;
+}
+.address_unit{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.address_caption .heading{
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: var(--second-color);
+}
+.address_caption .text{
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: gray;
+}
+.address_item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+}
+.address_item .address_button1{
+    text-decoration: none;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 3px;
+    box-sizing: border-box;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 230px;
+    border: 5px solid var(--main-color);
+}
+.address_item .address_button2{
+    text-decoration: none;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--main-color);
+    border-radius: 3px;
+    box-sizing: border-box;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 230px;
+    border: 5px solid var(--main-color);
+}
+.address_item .address_button1 .address_string1{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--string-color);
+}
+.address_item .address_button2 .address_string2{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: white;
+}
+.address_item .address_button1 .fa-gifts{
+    font-size: 2.6rem;
+    color: var(--string-color);
+    padding-bottom: 5px;
+}
+.address_item .address_button2 .fa-check-circle{
+    font-size: 3rem;
+    color: white;
+    padding-bottom: 3px;
+}

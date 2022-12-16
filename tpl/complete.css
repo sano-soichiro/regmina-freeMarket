@@ -1,0 +1,126 @@
+:root{
+    --main-color: #3B9264;
+    --main-color-shadow: #3b926457;
+    --error-color: #af1a2e;
+    --error-color-shadow: #af1a2e57;
+    --second-color: #161616;
+    --third-color: #cecece;
+    --string-color: #26794c;
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Noto Sans JP' , sans-serif;
+    font-size: 10px;
+    list-style: none;
+}
+
+::selection {
+    background: var(--main-color);
+    color: #fff;
+}
+
+body,html{
+    width: 100%;
+    height: 400px;
+}
+
+#complete{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.complete_wrapper{
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.complete_wrapper2{
+    width: 800px;
+    height: 300px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.complete_heading{
+    font-size: 2.4rem;
+    font-weight: 600;
+}
+.complete_item{
+    margin-top: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.complete_item2{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    border: var(--third-color) 1px solid;
+}
+.to_home_btn{
+    width: 150px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 12px;
+    padding-right: 12px;
+    border-radius: 5px;
+    display: block;
+    color: var(--second-color);
+    text-decoration: none;
+    font-size: 1.4rem;
+    border: 3px solid var(--second-color);
+}
+
+.complete_img{
+    width: 200px;
+    height: 100%;
+    margin-right: 20px;
+    background-color: var(--third-color);
+}
+.complete_img img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.complete_unit{
+    height: 100%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.complete_unit .complete_product_name{
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: var(--second-color);
+}
+.complete_unit .complete_product_unit{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+}
+.complete_unit .complete_product_unit .complete_product_price{
+    font-size: 1.7rem;
+    font-weight: 500;
+    font-family: 'Montserrat' , sans-serif;
+}
+.complete_unit .complete_product_unit .complete_product_seller{
+    font-size: 1.2rem;
+    font-weight: 400;
+}
